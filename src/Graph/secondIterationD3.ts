@@ -365,6 +365,14 @@ export function runD3StuffSecondIteration(
       ({ data }: any) => `translate(${-(data.name.length * 6) - 25}, -10)`
     );
 
+  node
+    .filter((d: { data: { type: string } }) => d.data.type === "Patiant")
+    .append("svg:foreignObject")
+    .attr("class", styles.icon)
+    .attr("y", -7)
+    .attr("x", -6)
+    .html('<i class="fas fa-info-circle"></i>');
+
   // Draw event rect
   const group = node
     // @ts-ignore

@@ -19,6 +19,12 @@
   stroke-width: 3px;
 }
 
+.node.Patiant .icon {
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+}
+
 .node.Flight rect {
   stroke: green;
 }
